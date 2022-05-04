@@ -1,0 +1,19 @@
+{
+	"name": "vigilio/crud3004",
+	"authors": [
+		{
+			"name": "Vigilio",
+			"email": "yonatanvigiliolavado09@gmail.com"
+		}
+	],
+	"require": {
+		"vlucas/phpdotenv": "^5.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"Model\\": "./Model",
+			"Controller\\": "./Controller",
+			"MVC\\": "./"
+		}
+	}
+}
