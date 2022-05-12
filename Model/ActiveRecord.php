@@ -173,15 +173,15 @@ class ActiveRecord{
     }
 
     public function crearCarpeta():void{
-        if(is_dir('img/'.self::$carpeta)){
-            mkdir('img/'.self::$carpeta);
+        if(is_dir('public/img/'.self::$carpeta)){
+            mkdir('public/img/'.self::$carpeta);
         }
     }
 
 
     public function guardarImagen($imagen,$nombre):void{
 
-        move_uploaded_file($imagen['tmp_name'], 'img/'.self::$carpeta.$nombre);
+        move_uploaded_file($imagen['tmp_name'], 'public/img/'.self::$carpeta.$nombre);
     }    
 
     
