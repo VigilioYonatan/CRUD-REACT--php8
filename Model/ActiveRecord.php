@@ -186,7 +186,7 @@ class ActiveRecord{
 
     
     public function eliminarImagen($imagen):void{
-        unlink('img/'.self::$carpeta.$imagen);
+        unlink('public/img/'.self::$carpeta.$imagen);
         
     }    
 }
